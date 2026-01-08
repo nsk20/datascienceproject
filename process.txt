@@ -1,0 +1,224 @@
+install uv:
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+create env:
+uv venv -p 3.10 venv
+
+Activate Env:
+source venv/bin/activate
+
+Packages:
+uv pip install -r requirements.txt
+
+To create Public and Private Key:
+ssh-keygen -t ed25519 -C "nsk20nsk@gmail.com"
+
+
+
+SSH Paraprase:
+shyam@123
+
+SHA256:IkmrVQ40/V+tWqe8fmaiNeCFLXr3ZCmNMsKuRObtacY nsk20nsk@gmail.com
+
+
+mkdir -p ~/.ssh
+
+mv xckey ~/.ssh/id_ed25519
+mv xckey.pub ~/.ssh/id_ed25519.pub
+chmod 600 ~/.ssh/id_ed25519
+chmod 644 ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+
+
+1. I have created template.py:
+
+"import os
+from pathlib import Path
+import logging
+
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
+
+project_name = "datascienceproject"
+
+list_of_files = [
+    ".github/workflows/.gitkeep",
+    f"src/{project_name}/__init__.py",
+    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/utils/__init__.py",
+    f"src/{project_name}/utils/common.py",
+    f"src/{project_name}/config/__init__.py",
+    f"src/{project_name}/config/configuration.py",
+    f"src/{project_name}/pipeline/__init__.py",
+    f"src/{project_name}/entity/__init__.py",
+    f"src/{project_name}/entity/config_entity.py",
+    f"src/{project_name}/constants/__init__.py",
+    "config/config.yaml",
+    "params.yaml",
+    "schema.yaml",
+    "main.py",
+    "Dockerfile",
+    "setup.py",
+    "research/research.ipynb"
+    "templates/index.html",
+]
+
+for filepath in list_of_files:
+    filepath = Path(filepath)
+    filedir, filename = os.path.split(filepath)
+    if filedir != "":
+        os.makedirs(filedir,exist_ok=True)
+        logging.info(f"Creating directory; {filedir} for the file: {filename}")
+
+    if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
+        with open(filepath, "w") as f:
+            pass
+            logging.info(f"Creating empty file: {filepath}")
+
+    else:
+        logging.info(f"{filename} already exists")
+"
+
+git add .
+git commit -m "Project Structure"
+git push origin main
+
+
+2. I have created logging functionality code in the src/datascienceproject/__init.py:
+"import os
+import sys
+import logging
+
+logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
+
+log_dir = "logs"
+log_filepath = os.path.join(log_dir,"logging.log")
+os.makedirs(log_dir, exist_ok=True)
+
+logging.basicConfig(
+    level = logging.INFO,
+    format = logging_str,
+
+    handlers=[
+        logging.FileHandler(log_filepath),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
+logger = logging.getLogger("datascienceLogger")
+"
+
+git add .
+git commit -m "Logging Functionality"
+git push origin main
+
+
+
+3. uv pip install ipykernel
+
+4. In the utils/common.py:
+
+import os
+import yaml
+from src.datascienceproject import logger
+import json
+import joblib
+from ensure import ensure_annotations
+from box import ConfigBox
+from typing import Any
+from box.exceptions import BoxValueError
+
+
+@ensure_annotations
+def read_yaml(path_to_yaml: Path) -> ConfigBox:
+    """ 
+    A function to read yaml file and return
+    Args:
+        path_to_yaml (str): path like input
+    Raises:
+        ValueError: if yaml file is empty
+        e: empty file
+    Returns:
+        ConfigBox: ConfigBox type
+    """
+    try:
+        with open(path_to_yaml) as yaml_file:
+            content = yaml.safe_load(yaml_file)
+            logger.info(f"yaml file: {path_to_yaml} loaded successfully")
+            return ConfigBox(content)
+    except BoxValueError:
+        raise ValueError("yaml file is empty")
+    except Exception as e:
+        raise e
+
+@ensure_annotations
+def create_directories(path_to_directories: list, verbose=True):
+    """
+    create list of directories
+
+    args:
+        verbose: True or False
+        path_to_directories: list of path of directories
+        ignore_log (bool, optional): ignore if multiple dirs is to be created. Defaults to False.
+    """
+    for path in path_to_directories:
+        os.makedirs(path, exist_ok=True)
+        if verbose:
+            logger.info(f"created directory at: {path}")
+
+
+@ensure_annotations
+def save_json(path: Path, data: dict):
+    """
+    save json data
+    args:
+        path (Path): path to json file
+        data (dict): data to be saved in json file
+    """
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4)
+    
+    logger.info(f"json file saved at: {path}")
+
+@ensure_annotations
+def load_json(path: Path) -> ConfigBox:
+    """
+    load json files data
+
+    Args:
+        path (Path): path to json file
+    
+    Returns:
+        ConfigBox: data as class attributes instead of dict
+    """
+    with open(path) as f:
+        content = json.load(f)
+    
+    logger.info(f"json file loaded succesfully from: {path}")
+    return ConfigBox(content)
+
+@ensure_annotations
+def save_bin(data: Any, path: Path):
+    """
+    Save binary file
+
+    Args:
+        data(any): Data to be saved as binary
+        path(any): path to binary file
+    """
+    joblib.dump(value=data, filename=path)
+    logger.info(f"Binary file saved at: {path}")
+
+@ensure_annotations
+def load_bin(path: Path)-> Any:
+    """
+    Load binary file
+
+    Args:
+        path(any): path to binary file
+    
+    Returns:
+        Any: Object stored in the file
+    """
+    data = joblib.load(path)
+    logger.info(f"Binary file loaded from: {path}")
+    return data
