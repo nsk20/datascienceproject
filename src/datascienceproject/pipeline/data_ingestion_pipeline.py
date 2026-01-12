@@ -1,5 +1,5 @@
 from src.datascienceproject.config.configuration import ConfigurationManager
-from src.datascienceproject.components import DataIngestion
+from src.datascienceproject.components.data_ingestion import DataIngestion
 from src.datascienceproject import logger
 
 STAGE_NAME = "Data Ingestion Stage"
