@@ -593,3 +593,453 @@ x==========x]
 [2026-01-14 03:29:32,404: INFO: main: >>>>>stage Model Trainer Stage completed <<<<<<
 
 x==========x]
+[2026-01-14 04:08:55,816: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-14 04:08:55,820: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-14 04:08:55,904: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-14 04:08:55,906: INFO: common: created directory at: artifacts]
+[2026-01-14 04:08:55,909: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-14 04:12:06,687: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-14 04:12:06,692: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-14 04:12:06,699: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-14 04:12:06,706: INFO: common: created directory at: artifacts]
+[2026-01-14 04:12:06,708: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 19:13:43,104: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 19:13:43,164: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 19:13:43,178: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 19:13:43,180: INFO: common: created directory at: artifacts]
+[2026-01-15 19:13:43,184: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 19:21:47,417: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 19:21:47,434: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 19:21:47,449: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 19:21:47,460: INFO: common: created directory at: artifacts]
+[2026-01-15 19:21:47,475: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 19:27:30,757: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 19:27:30,766: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 19:27:30,785: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 19:27:30,796: INFO: common: created directory at: artifacts]
+[2026-01-15 19:27:30,807: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 19:28:10,505: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 19:28:10,514: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 19:28:10,524: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 19:28:10,531: INFO: common: created directory at: artifacts]
+[2026-01-15 19:28:10,533: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 19:28:42,614: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 19:28:42,618: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 19:28:42,623: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 19:28:42,626: INFO: common: created directory at: artifacts]
+[2026-01-15 19:28:42,628: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 19:28:42,809: INFO: common: json file saved at: artifacts/model_evaluation/metric.json]
+[2026-01-15 19:29:44,307: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 19:29:44,312: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 19:29:44,334: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 19:29:44,344: INFO: common: created directory at: artifacts]
+[2026-01-15 19:29:44,351: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 19:29:44,583: INFO: common: json file saved at: artifacts/model_evaluation/metric.json]
+[2026-01-15 20:08:42,217: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,205: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,259: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,293: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,313: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,345: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,339: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,359: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,367: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,377: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,390: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,398: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,410: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,423: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,438: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:08:42,466: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:16:49,109: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:16:49,147: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:16:49,159: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:16:49,190: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:16:49,219: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:16:49,229: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:28:56,044: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:28:56,050: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:28:56,055: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 341, in dispatch_control
+    await self.process_control(msg)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 347, in process_control
+    idents, msg = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:28:56,072: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:28:56,079: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 20:28:56,086: ERROR: zmqstream: Uncaught exception in ZMQStream callback]
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 565, in _log_error
+    f.result()
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 577, in shell_channel_thread_main
+    _, msg2 = self.session.feed_identities(msg, copy=False)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/jupyter_client/session.py", line 993, in feed_identities
+    raise ValueError(msg)
+ValueError: DELIM not in msg_list
+[2026-01-15 21:56:26,607: INFO: main: >>>>>stage Data Ingestion Stage started <<<<<<]
+[2026-01-15 21:56:26,617: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 21:56:26,624: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 21:56:26,634: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 21:56:26,637: INFO: common: created directory at: artifacts]
+[2026-01-15 21:56:26,638: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-15 21:56:26,639: INFO: data_ingestion: File already exists]
+[2026-01-15 21:56:26,697: INFO: main: >>>>>stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2026-01-15 21:56:26,698: INFO: main: >>>>>stage Data Validation Stage started <<<<<<]
+[2026-01-15 21:56:26,708: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 21:56:26,713: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 21:56:26,719: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 21:56:26,720: INFO: common: created directory at: artifacts]
+[2026-01-15 21:56:26,720: INFO: common: created directory at: artifacts/data_validation]
+[2026-01-15 21:56:26,757: INFO: main: >>>>>stage Data Validation Stage completed <<<<<<
+
+x==========x]
+[2026-01-15 21:56:26,760: INFO: main: >>>>>stage Data Transformation Stage started <<<<<<]
+[2026-01-15 21:56:26,772: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 21:56:26,774: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 21:56:26,779: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 21:56:26,780: INFO: common: created directory at: artifacts]
+[2026-01-15 21:56:26,781: INFO: common: created directory at: artifacts/data_transformation]
+[2026-01-15 21:56:26,904: INFO: data_transformation: Splited data into training and test sets]
+[2026-01-15 21:56:26,905: INFO: data_transformation: (1199, 12)]
+[2026-01-15 21:56:26,905: INFO: data_transformation: (400, 12)]
+[2026-01-15 21:56:26,905: INFO: main: >>>>>stage Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2026-01-15 21:56:26,905: INFO: main: >>>>>stage Model Trainer Stage started <<<<<<]
+[2026-01-15 21:56:26,913: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 21:56:26,915: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 21:56:26,921: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 21:56:26,922: INFO: common: created directory at: artifacts]
+[2026-01-15 21:56:26,922: INFO: common: created directory at: artifacts/model_trainer]
+[2026-01-15 21:56:27,016: INFO: main: >>>>>stage Model Trainer Stage completed <<<<<<
+
+x==========x]
+[2026-01-15 21:56:27,016: INFO: main: >>>>>stage Model Evaluation Stage started <<<<<<]
+[2026-01-15 21:56:27,028: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 21:56:27,032: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 21:56:27,039: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 21:56:27,041: INFO: common: created directory at: artifacts]
+[2026-01-15 21:56:27,042: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 21:56:38,781: INFO: common: json file saved at: artifacts/model_evaluation/metric.json]
+[2026-01-15 21:56:45,292: ERROR: main: API request to endpoint /api/2.0/mlflow/registered-models/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "/home/user/datascienceproject/main.py", line 56, in <module>
+    model_evaluation.initiate_model_evaluation()
+  File "/home/user/datascienceproject/src/datascienceproject/pipeline/model_evaluation_pipeline.py", line 16, in initiate_model_evaluation
+    model_evaluation.log_into_mlflow()
+  File "/home/user/datascienceproject/src/datascienceproject/components/model_evaluation.py", line 56, in log_into_mlflow
+    mlflow.sklearn.log_model(model, "model", registered_model_name = "ElasticnetModel")
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/sklearn/__init__.py", line 426, in log_model
+    return Model.log(
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/models/model.py", line 1357, in log
+    registered_model = mlflow.tracking._model_registry.fluent._register_model(
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/tracking/_model_registry/fluent.py", line 167, in _register_model
+    raise e
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/tracking/_model_registry/fluent.py", line 156, in _register_model
+    create_model_response = client.create_registered_model(name)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/tracking/client.py", line 3842, in create_registered_model
+    return self._get_registry_client().create_registered_model(
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/telemetry/track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/tracking/_model_registry/client.py", line 96, in create_registered_model
+    return self.store.create_registered_model(name, tags, description, deployment_job_id)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/store/model_registry/rest_store.py", line 110, in create_registered_model
+    response_proto = self._call_endpoint(CreateRegisteredModel, req_body)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/store/model_registry/base_rest_store.py", line 42, in _call_endpoint
+    return call_endpoint(
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/utils/rest_utils.py", line 596, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "/home/user/datascienceproject/venv/lib/python3.10/site-packages/mlflow/utils/rest_utils.py", line 321, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/registered-models/create failed with error code 403 != 200. Response body: ''
+[2026-01-15 22:00:09,163: INFO: main: >>>>>stage Data Ingestion Stage started <<<<<<]
+[2026-01-15 22:00:09,170: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 22:00:09,172: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 22:00:09,177: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 22:00:09,178: INFO: common: created directory at: artifacts]
+[2026-01-15 22:00:09,178: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-15 22:00:09,178: INFO: data_ingestion: File already exists]
+[2026-01-15 22:00:09,226: INFO: main: >>>>>stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2026-01-15 22:00:09,226: INFO: main: >>>>>stage Data Validation Stage started <<<<<<]
+[2026-01-15 22:00:09,244: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 22:00:09,251: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 22:00:09,261: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 22:00:09,263: INFO: common: created directory at: artifacts]
+[2026-01-15 22:00:09,265: INFO: common: created directory at: artifacts/data_validation]
+[2026-01-15 22:00:09,309: INFO: main: >>>>>stage Data Validation Stage completed <<<<<<
+
+x==========x]
+[2026-01-15 22:00:09,311: INFO: main: >>>>>stage Data Transformation Stage started <<<<<<]
+[2026-01-15 22:00:09,328: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 22:00:09,335: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 22:00:09,341: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 22:00:09,344: INFO: common: created directory at: artifacts]
+[2026-01-15 22:00:09,345: INFO: common: created directory at: artifacts/data_transformation]
+[2026-01-15 22:00:09,436: INFO: data_transformation: Splited data into training and test sets]
+[2026-01-15 22:00:09,436: INFO: data_transformation: (1199, 12)]
+[2026-01-15 22:00:09,437: INFO: data_transformation: (400, 12)]
+[2026-01-15 22:00:09,438: INFO: main: >>>>>stage Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2026-01-15 22:00:09,438: INFO: main: >>>>>stage Model Trainer Stage started <<<<<<]
+[2026-01-15 22:00:09,444: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 22:00:09,446: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 22:00:09,451: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 22:00:09,452: INFO: common: created directory at: artifacts]
+[2026-01-15 22:00:09,452: INFO: common: created directory at: artifacts/model_trainer]
+[2026-01-15 22:00:09,513: INFO: main: >>>>>stage Model Trainer Stage completed <<<<<<
+
+x==========x]
+[2026-01-15 22:00:09,513: INFO: main: >>>>>stage Model Evaluation Stage started <<<<<<]
+[2026-01-15 22:00:09,519: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-15 22:00:09,521: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-15 22:00:09,525: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-01-15 22:00:09,526: INFO: common: created directory at: artifacts]
+[2026-01-15 22:00:09,527: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-01-15 22:00:10,407: INFO: common: json file saved at: artifacts/model_evaluation/metric.json]
+[2026-01-15 22:00:26,381: INFO: main: >>>>>stage Model Evaluation Stage completed <<<<<<
+
+x==========x]
